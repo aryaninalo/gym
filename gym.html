@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دفتر تمرینی - هدر ساده</title>
+    <link rel="stylesheet" href="gym.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- هدر اصلی -->
+    <header class="simple-header">
+        <div class="header-container">
+            <!-- کلید تغییر حالت (سمت چپ) -->
+            <div class="header-left">
+                <button class="theme-toggle" id="themeToggle" aria-label="تغییر حالت رنگ">
+                    <span class="theme-icon">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                    <span class="theme-text">حالت شب</span>
+                </button>
+            </div>
+
+            <!-- تیتر اصلی (وسط) -->
+            <div class="header-center">
+                <h1 class="header-title">
+                    <span class="title-text">دفتر تمرینی،</span>
+                    <span class="title-highlight">همیشه همراهت</span>
+                </h1>
+            </div>
+
+            <!-- CTA دکمه (سمت راست) -->
+            <div class="header-right">
+                <button class="cta-button" id="startWorkoutBtn">
+                    <span class="cta-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </span>
+                    <span class="cta-text">رفتن سر تمرین</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+<body>
+    <!-- بخش برنامه گرم کردن -->
+    <section class="warmup-section">
+        <div class="warmup-container">
+            
+            <!-- هدر بخش -->
+            <div class="warmup-header">
+                <div class="header-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h1 class="section-title">برنامه گرم کردن</h1>
+                <p class="section-subtitle">آماده‌سازی بدن برای بهترین عملکرد</p>
+            </div>
+
+            <!-- کارت اطلاعات زمان -->
+            <div class="info-card time-card">
+                <div class="card-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">زمان گرم کردن</h3>
+                    <div class="time-info">
+                        <div class="time-display">
+                            <span class="time-number">۵-۷</span>
+                            <span class="time-unit">دقیقه</span>
+                        </div>
+                        <div class="time-details">
+                            <div class="time-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>زمان ایده‌آل برای گرم کردن</span>
+                            </div>
+                            <div class="time-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>قبل از هر جلسه تمرینی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- کارت اهداف -->
+            <div class="info-card goals-card">
+                <div class="card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">اهداف گرم کردن</h3>
+                    <div class="goals-grid">
+                        <div class="goal-item">
+                            <div class="goal-icon temp-icon">
+                                <i class="fas fa-thermometer-half"></i>
+                            </div>
+                            <h4 class="goal-title">بالا بردن دما</h4>
+                            <p class="goal-desc">افزایش دمای بدن و عضلات برای انعطاف‌پذیری بهتر</p>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-icon joint-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <h4 class="goal-title">آماده‌سازی مفاصل</h4>
+                            <p class="goal-desc">ترشح مایع سینوویال برای روان‌سازی مفاصل</p>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-icon muscle-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h4 class="goal-title">فعال‌سازی عضلات</h4>
+                            <p class="goal-desc">آماده‌سازی سیستم عصبی-عضلانی برای تمرین</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- برنامه گرم کردن -->
+            <div class="warmup-program">
+                <div class="program-header">
+                    <h2 class="program-title">مراحل گرم کردن</h2>
+                </div>
+
+                <!-- بخش‌های برنامه گرم کردن -->
+                <div class="program-sections">
+                    
+                    <!-- بخش ۱ -->
+                    <div class="program-section cardio-section">
+                        <div class="section-header">
+                            <div class="section-number">
+                                <span>۱</span>
+                            </div>
+                            <div class="section-title-info">
+                                <h3 class="section-title">گرم کردن قلبی-عروقی</h3>
+                                <div class="section-meta">
+                                    <span class="duration">
+                                        <i class="fas fa-clock"></i>
+                                        ۲ دقیقه
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="section-toggle" data-section="1">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="section-content" id="section-1">
+                            <div class="exercise-list">
+                                <!-- تمرین ۱ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۱</div>
+                                        <h4 class="exercise-name">جاگینگ درجا</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">۶۰ ثانیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            با سرعت متوسط درجا بدوید، زانوها را تا سطح کمر بالا بیاورید.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>دست‌ها را هماهنگ با پاها حرکت دهید</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- تمرین ۲ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۲</div>
+                                        <h4 class="exercise-name">جامپینگ جک</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">۴۵ ثانیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            پرش با باز و بسته کردن پاها و دست‌ها به صورت همزمان.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>فرود نرم روی پنجه پا</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- تمرین ۳ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۳</div>
+                                        <h4 class="exercise-name">هاپینگ لترال</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">۴۵ ثانیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            پرش‌های کوچک به طرفین با حفظ تعادل و ثبات مرکزی.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>زانوها کمی خم و شکم سفت</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- بخش ۲ -->
+                    <div class="program-section mobility-section">
+                        <div class="section-header">
+                            <div class="section-number">
+                                <span>۲</span>
+                            </div>
+                            <div class="section-title-info">
+                                <h3 class="section-title">متحرک‌سازی مفاصل</h3>
+                                <div class="section-meta">
+                                    <span class="duration">
+                                        <i class="fas fa-clock"></i>
+                                        ۲ دقیقه
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="section-toggle" data-section="2">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="section-content" id="section-2">
+                            <div class="exercise-list">
+                                <!-- تمرین ۱ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۱</div>
+                                        <h4 class="exercise-name">چرخش گردن</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">هر طرف ۳۰ ثانیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            چرخش آرام سر در جهت عقربه‌های ساعت و خلاف آن.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>شانه‌ها را شل نگه دارید</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- تمرین ۲ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۲</div>
+                                        <h4 class="exercise-name">چرخش شانه</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">هر طرف ۴۵ ثانیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            چرخش شانه‌ها به جلو و عقب در دامنه کامل حرکتی.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>با کنترل کامل حرکت دهید</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- تمرین ۳ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۳</div>
+                                        <h4 class="exercise-name">چرخش باسن</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">هر طرف ۴۵ ثانیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            چرخش لگن در جهت عقربه‌های ساعت و خلاف آن.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>زانوها کمی خم و تعادل حفظ شود</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- بخش ۳ -->
+                    <div class="program-section activation-section">
+                        <div class="section-header">
+                            <div class="section-number">
+                                <span>۳</span>
+                            </div>
+                            <div class="section-title-info">
+                                <h3 class="section-title">فعال‌سازی عضلات</h3>
+                                <div class="section-meta">
+                                    <span class="duration">
+                                        <i class="fas fa-clock"></i>
+                                        ۱-۲ دقیقه
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="section-toggle" data-section="3">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="section-content" id="section-3">
+                            <div class="exercise-list">
+                                <!-- تمرین ۱ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۱</div>
+                                        <h4 class="exercise-name">اسکوات پرشی</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">۳ ست ۱۰ تایی</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            اسکوات استاندارد با پرش انفجاری در مرحله بالا آمدن.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>فرود نرم با زانوهای خم</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- تمرین ۲ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۲</div>
+                                        <h4 class="exercise-name">پوش آپ دینامیک</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">۳ ست ۸ تایی</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            شنای سوئدی با جداسازی دست‌ها در بالاترین نقطه.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>شکم را درگیر نگه دارید</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- تمرین ۳ -->
+                                <div class="exercise-item">
+                                    <div class="exercise-header">
+                                        <div class="exercise-number">۳</div>
+                                        <h4 class="exercise-name">لانج پرشی</h4>
+                                        <div class="sets-box">
+                                            <span class="sets-count">هر پا ۸ تکرار</span>
+                                        </div>
+                                    </div>
+                                    <div class="exercise-details">
+                                        <p class="exercise-desc">
+                                            لانج با جابجایی پاها در هوا و فرود در حالت مخالف.
+                                        </p>
+                                        <div class="exercise-tips">
+                                            <div class="tip">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>تعادل و کنترل کلید موفقیت است</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <!-- بخش برنامه هفتگی -->
+    <section class="weekly-plan">
+        <div class="weekly-container">
+            
+            <!-- هدر بخش -->
+            <div class="plan-header">
+                <div class="plan-icon">
+                    <i class="fas fa-calendar-week"></i>
+                </div>
+                <h1 class="plan-title">برنامه تمرینی هفتگی</h1>
+                <p class="plan-subtitle">برنامه‌ریزی هوشمند برای هفته پیش رو</p>
+            </div>
+
+            <!-- لیست روزهای هفته -->
+            <div class="days-list">
+                
+                <!-- روز ۱: شنبه -->
+                <div class="day-item active" data-day="saturday">
+                    <div class="day-number">۱</div>
+                    <h3 class="day-name">شنبه</h3>
+                </div>
+
+                <!-- روز ۲: یکشنبه -->
+                <div class="day-item" data-day="sunday">
+                    <div class="day-number">۲</div>
+                    <h3 class="day-name">یکشنبه</h3>
+                </div>
+
+                <!-- روز ۳: دوشنبه -->
+                <div class="day-item" data-day="monday">
+                    <div class="day-number">۳</div>
+                    <h3 class="day-name">دوشنبه</h3>
+                </div>
+
+                <!-- روز ۴: سه‌شنبه -->
+                <div class="day-item" data-day="tuesday">
+                    <div class="day-number">۴</div>
+                    <h3 class="day-name">سه‌شنبه</h3>
+                </div>
+
+                <!-- روز ۵: چهارشنبه -->
+                <div class="day-item" data-day="wednesday">
+                    <div class="day-number">۵</div>
+                    <h3 class="day-name">چهارشنبه</h3>
+                </div>
+
+                <!-- روز ۶: پنجشنبه -->
+                <div class="day-item" data-day="thursday">
+                    <div class="day-number">۶</div>
+                    <h3 class="day-name">پنجشنبه</h3>
+                </div>
+
+                <!-- روز ۷: جمعه -->
+                <div class="day-item" data-day="friday">
+                    <div class="day-number">۷</div>
+                    <h3 class="day-name">جمعه</h3>
+                </div>
+
+            </div>
+
+            <!-- نمایش محتوای روز انتخاب شده -->
+            <div class="content-area">
+                
+                <!-- محتوای روز شنبه -->
+                <div class="day-content active" id="content-saturday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز شنبه</h2>
+                    </div>
+                    <div class="content-body">
+                        <!-- این قسمت از پنل ادمین پر می‌شود -->
+                        <div class="exercise-list" id="exercise-list-saturday">
+                            <!-- تمرین‌ها اینجا بارگذاری می‌شوند -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محتوای روز یکشنبه -->
+                <div class="day-content" id="content-sunday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز یکشنبه</h2>
+                    </div>
+                    <div class="content-body">
+                        <div class="exercise-list" id="exercise-list-sunday">
+                            <!-- تمرین‌ها اینجا بارگذاری می‌شوند -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محتوای روز دوشنبه -->
+                <div class="day-content" id="content-monday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز دوشنبه</h2>
+                    </div>
+                    <div class="content-body">
+                        <div class="exercise-list" id="exercise-list-monday">
+                            <!-- تمرین‌ها اینجا بارگذاری می‌شوند -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محتوای روز سه‌شنبه -->
+                <div class="day-content" id="content-tuesday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز سه‌شنبه</h2>
+                    </div>
+                    <div class="content-body">
+                        <div class="exercise-list" id="exercise-list-tuesday">
+                            <!-- تمرین‌ها اینجا بارگذاری می‌شوند -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محتوای روز چهارشنبه -->
+                <div class="day-content" id="content-wednesday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز چهارشنبه</h2>
+                    </div>
+                    <div class="content-body">
+                        <div class="exercise-list" id="exercise-list-wednesday">
+                            <!-- تمرین‌ها اینجا بارگذاری می‌شوند -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محتوای روز پنجشنبه -->
+                <div class="day-content" id="content-thursday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز پنجشنبه</h2>
+                    </div>
+                    <div class="content-body">
+                        <div class="exercise-list" id="exercise-list-thursday">
+                            <!-- تمرین‌ها اینجا بارگذاری می‌شوند -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محتوای روز جمعه -->
+                <div class="day-content" id="content-friday">
+                    <div class="content-header">
+                        <h2 class="content-title">برنامه تمرینی روز جمعه</h2>
+                    </div>
+                    <div class="content-body">
+                        <div class="rest-day" id="rest-day-content">
+                            <!-- محتوای استراحت از پنل ادمین -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قالب تمرین (برای استفاده در JavaScript) -->
+    <template id="exercise-template">
+        <div class="exercise-item">
+            <div class="exercise-number"></div>
+            <div class="exercise-info">
+                <h4 class="exercise-name"></h4>
+                <div class="exercise-details">
+                    <span class="sets"></span>
+                    <span class="rest"></span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+
+
+
+
+
+
+
+
+    <script src="gym.js"></script>
+</body>
+</html>
